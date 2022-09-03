@@ -1,20 +1,77 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomePageController!{% endblock %}
+{% block title %}Learn everything related to game development{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/shared/httpd/wan-wan-bytes/symfony/src/Controller/HomePageController.php'|file_link(0) }}">src/Controller/HomePageController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/shared/httpd/wan-wan-bytes/symfony/templates/home_page/index.html.twig'|file_link(0) }}">templates/home_page/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <section class="hero bg-warning text-center d-flex flex-column justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="fs-1"><span class="text-danger">Wan</span> <span class="text-primary">Wan</span> <span class="text-success">Bytes</span></h2>
+                    <h1 class="fs-2">Learning everything related to game development</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about bg-danger text-bg-danger">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        Hello, my name is Robert.
+                        I have over a decade of experience working as a web developer on a range of projects from small themes to large enterprise applications.
+                        Currently, I work on an open source marketing tool at Acquia called Mautic.
+                    </p>
+                    <p>
+                        I have participated in a number of game jams over the years and plan on staring an indie studio around 2025.
+                        In the meantime I am learning everything I can and want to share all that knowledge here through tutorials, videos, interactive quiz's etc.
+                        My goal to fill the gap between intermediate and advanced development practices while building a free open source LMS tool built with Symfony.
+                    </p>
+                    <p>
+                        Expect a lot more content to come soon in the next few months.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="links bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Links to case studies, portfolios and games</h2>
+                    <nav class="nav flex-column">
+                        <a class="nav-link ps-0" href="https://sensiolabs.com/en/ressources/success_stories/bsn-sports-team-art-locker.html" target="_blank">Sensio Labs case study on BSN Sports project</a>
+                        <a class="nav-link ps-0" href="https://www.unleashed-technologies.com/our-work/bsn-sports-team-art-locker" target="_blank">Unleashed Technologies case study on BSN Sports project</a>
+                        <a class="nav-link ps-0" href="https://robert-parker.me/" target="_blank">Old portfolio with images of previously built sites/themes</a>
+                        <a class="nav-link ps-0" href="https://github.com/wan-wan-bytes/wan-wan-bytes-website" target="_blank">Github project for this site</a>
+                        <a class="nav-link ps-0" href="https://github.com/diaboloshogunate" target="_blank">Personal Github</a>
+                        <a class="nav-link ps-0" href="https://diaboloshogun.itch.io/" target="_blank">Itch page</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact bg-success text-bg-success">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Contact Me</h2>
+                    <nav class="nav flex-column">
+                        <a class="nav-link ps-0" href="mailto:robert.parker@wan-wan-bytes.com" target="_blank">Email</a>
+                        <a class="nav-link ps-0" href="https://www.linkedin.com/in/rparker521/" target="_blank">LinkedIn</a>
+                        <a class="nav-link ps-0" href="https://mobile.twitter.com/diaboloshogun" target="_blank">Twitter</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="copyright bg-dark text-bg-dark text-center fs-6">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    &copy; {{ 'now'|date('Y') }} All rights Reserved
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}

@@ -1,3 +1,21 @@
-$primary: darken(#F00, 20%);
+$primary: #598ECB;
+$warning: #F4C815;
+$alert: #EF446A;
+$success: #31B450;
+$nav-link-color: #FFF;
+$nav-link-color-hover: #ccc;
 
 @import "~bootstrap/scss/bootstrap";
+
+body {
+  background-color: $dark;
+}
+section {
+  background-color: $light;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.hero {
+  height: 80vh;
+  max-height: 600px;
+}
